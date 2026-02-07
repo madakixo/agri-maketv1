@@ -1,0 +1,8 @@
+{
+  "name": "Copy of AgriMarket - Fresh Connect",
+  "description": "A sophisticated agricultural marketplace connecting farmers directly with buyers, featuring AI-powered listing descriptions and market insights.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

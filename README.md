@@ -1,11 +1,35 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# AgriMarket - Fresh Connect
 
-  <h1>Built with AI Studio</h2>
+A sophisticated agricultural marketplace connecting farmers directly with buyers.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Local Development
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 1. Frontend (React + Gemini API)
+- **Install deps:** `npm install`
+- **Configure Env:** Create `.env` and add `VITE_API_KEY=your_gemini_key`
+- **Run:** `npm run dev`
 
-</div>
+### 2. Backend (FastAPI + PostgreSQL)
+- **Environment:** `python -m venv venv && source venv/bin/activate`
+- **Install deps:** `pip install -r requirements.txt`
+- **Database:** Ensure PostgreSQL with PostGIS is running.
+- **Run:** `uvicorn app.main:app --reload`
+
+## 🌍 Deployment
+
+### Frontend (Vercel)
+1. Push to GitHub.
+2. Link to Vercel.
+3. Add `API_KEY` to Environment Variables.
+
+### Backend (Railway/Render)
+1. Provision a PostgreSQL + PostGIS database.
+2. Deploy FastAPI app.
+3. Set `DATABASE_URL` and `CLOUDINARY_URL` in environment.
+
+## 🤖 AI Features
+This app uses **Gemini 3 Flash** for:
+- Auto-generating listing descriptions.
+- Market price suggestions.
+- Agricultural advisory chat for farmers.
